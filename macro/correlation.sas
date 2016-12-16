@@ -2,9 +2,6 @@
 Purpose: generate the time-series average of cross-sectional correlation
          matrix for Pearson and Spearman correlations;
 
-Author : Wei Zhang
-Date   : 04/20/2006
-
 Input  
  data  : the panel data
  byvar : the time-variable

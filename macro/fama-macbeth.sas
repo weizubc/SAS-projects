@@ -6,7 +6,6 @@ Purpose: 0. report well-organized Fama-MacBeth regression results
          3. indicate the signicance level by '*', '**' and '***' for 10%, 5% and 1%
          4. report the range of periods the total observations involved
 
-by Wei Zhang, Nov 2006
 **************************************************************************************/
 
 ** 1. run cross-sectional OLS regressions;
