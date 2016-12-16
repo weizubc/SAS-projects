@@ -1,15 +1,12 @@
-
-/*
-
-filename mfile 'C:\Users\weiz\Desktop\tosave\macro';
-
-%include mfile(checkdup);
-
-%checkdup(ncusip,permno,var2=ncusip);
-
-objective: check if there is any dup in var obs and if there is perfect match with one var1 obs and one var2 obs.
-
-*/
+/**************************************************
+A common task in data cleaning is to identify
+observations with a duplicate ID number. If we set
+the data set by ID, then the observations which
+are not duplicated will be both the first and the
+last with that ID number. We can therefore write
+any observations which are not both first.id and
+last.id to a separate data set and examine them.
+**************************************************/
 
 
 %macro checkdup(dataset,var1,var2=null);
@@ -58,25 +55,6 @@ run;
 
 
 
-/**************************************************
-A common task in data cleaning is to identify
-observations with a duplicate ID number. If we set
-the data set by ID, then the observations which
-are not duplicated will be both the first and the
-last with that ID number. We can therefore write
-any observations which are not both first.id and
-last.id to a separate data set and examine them.
-**************************************************/
-/*
-data single dup;
-set temp;
-by group;
-if first.group and last.group then output single;
-else output dup;
-run;
 
-options mprint mlogic symbolgen;
-options nomprint nomlogic nosymbolgen;
-*/
 
 
