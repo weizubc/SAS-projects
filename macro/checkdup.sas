@@ -48,7 +48,7 @@ run;
 
 
 
-* check if one var1 is matched with one var2 or one var1 is matched with multiple var2 or opposite;
+*check if one var1 is matched with one var2 or one var1 is matched with multiple var2 or opposite;
 *if there is no obs in dup_var1 and no obs in dup_var2 then one var1 is matched with one var2;
 *if there is no obs in dup_var1 and obs in dup_var2 then several var1 is matched with one var2;
 *if there is obs in dup_var1 and no obs in dup_var2 then one var1 is matched with several var2;
